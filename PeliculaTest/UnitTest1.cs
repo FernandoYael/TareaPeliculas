@@ -3,7 +3,6 @@ using System.IO;
 using Xunit;
 using Pelicula;
 
-
 namespace PeliculaTest
 {
 

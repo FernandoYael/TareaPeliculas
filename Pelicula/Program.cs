@@ -8,15 +8,23 @@ namespace Pelicula
     {
         //Campos
         private List<Actor> actores = new List<Actor>();
-
+        public string titulo;
+        public Int16 año
         //Constructores
+        public Pelicula()
+        {
+
+        }
+        public Pelicula(string titulo, Int16 año)
+        {
+            
+        }
      
         //Métodos
      
         public void Imprime()
         {
-     //       Console.WriteLine($"{titulo} ({año})");
-
+            Console.WriteLine($"{titulo} ({año})");
         }
 
 
@@ -45,7 +53,10 @@ namespace Pelicula
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
+            Pelicula p1 = new Pelicula();
+            p1.SetTitulo("El Gato con Botas 2");
+            p1.SetAño(2022);
+            Console.WriteLine("{0}({1})", p1.GetTitulo(), p1.GetAño());
         }
     }
 }
