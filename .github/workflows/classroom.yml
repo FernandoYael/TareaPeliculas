@@ -19,7 +19,7 @@
             run: dotnet restore
           - name: Build
             run: dotnet build --configuration Release --no-restore
-          - uses: mariosky/autograding@v1.0.2
+          - uses: mariosky/autograding@v1.7.2
 
 
 
