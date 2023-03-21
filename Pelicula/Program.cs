@@ -6,14 +6,12 @@ namespace Pelicula
 
     public class Pelicula
     {
-        //Campos
         private List<Actor> actores = new List<Actor>();
         private short año{ get; set; }
         private string? país{ get; set; }
         private string? director{ get; set; }
         private string? titulo{ get; set; }
 
-        //Constructores
         public Pelicula()
         {
         }
@@ -25,7 +23,6 @@ namespace Pelicula
         }
 
      
-        //Métodos
      
         public void SetTitulo(string titulo)
         {
@@ -62,7 +59,6 @@ namespace Pelicula
 
     public class Actor
     {
-        //Propiedades
         private string? nombre{ get; set; }
         private short año{ get; set; }
         public Actor(string nombre, short año)
@@ -70,18 +66,12 @@ namespace Pelicula
             this.nombre = nombre;
             this.año = año;
         }
-        //Constructores
-
-
-        //Métodos 
         public void Imprime()
         {
             Console.WriteLine($"{nombre} ({año})");
         }
     }
 
-    // Puedes probar tu código en Main() pero lo importante
-    // es que pase las pruebas
 
     class Program
     {
