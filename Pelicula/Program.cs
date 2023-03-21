@@ -7,7 +7,7 @@ namespace Pelicula
     public class Pelicula
     {
         private List<Actor> actores = new List<Actor>();
-        private int año{ get; set; }
+        private string año{ get; set; }
         private string? país{ get; set; }
         private string? director{ get; set; }
         private string? titulo{ get; set; }
@@ -15,7 +15,7 @@ namespace Pelicula
         public Pelicula()
         {
         }
-        public Pelicula(string titulo, int año)
+        public Pelicula(string titulo, string año)
             : this()
         {
             this.titulo = titulo;
@@ -36,7 +36,7 @@ namespace Pelicula
         {
             return this.titulo;
         }
-        public int GetAño()
+        public string GetAño()
         {
             return this.año;
         }
@@ -60,7 +60,7 @@ namespace Pelicula
     public class Actor
     {
         private string? nombre{ get; set; }
-        private int año{ get; set; }
+        private string año{ get; set; }
         public Actor(string nombre, int16 año)
         {
             this.nombre = nombre;
