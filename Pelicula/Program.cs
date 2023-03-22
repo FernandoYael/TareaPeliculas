@@ -57,6 +57,7 @@ namespace Pelicula
         }
     }
 
+
     public class Actor
     {
         private string? nombre{ get; set; }
